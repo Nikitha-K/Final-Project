@@ -1,0 +1,21 @@
+create table STUDENT_INFO(STUDENTID VARCHAR(5) PRIMARY KEY ,
+STUDENTSTANDARD NUMBER(2) ,
+CATEGORY CHAR(2) ,
+CHECK (CATEGORY='P' or CATEGORY='H' or  CATEGORY='S'),
+STUDENTNAME VARCHAR(15) );
+
+
+insert into STUDENT_INFO values(1,1,'P','SAI');
+insert into STUDENT_INFO values(2,2,'P','SRI');
+insert into STUDENT_INFO values(3,3,'P','sSIRI');
+insert into STUDENT_INFO values(4,4,'P','SANDEEPI');
+insert into STUDENT_INFO values(5,5,'P','SHAH');
+insert into STUDENT_INFO values(6,6,'S','PRIYA');
+insert into STUDENT_INFO values(7,7,'S','SIAYI');
+insert into STUDENT_INFO values(8,8,'S','RACH');
+insert into STUDENT_INFO values(9,9,'S','IKTHAR');
+insert into STUDENT_INFO values(10,10,'S','PRIYA');
+insert into STUDENT_INFO values(11,11,'H','NEERA');
+insert into STUDENT_INFO values(12,12,'H','LOKASH');
+
+select *from STUDENT_INFO;
